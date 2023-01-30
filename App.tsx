@@ -6,7 +6,7 @@ import {
   Roboto_400Regular,
   Roboto_700Bold
 } from '@expo-google-fonts/roboto';
-import { SignIn } from '@screens/SignIn';
+import { SignUp } from '@screens/SignUp';
 import { THEME } from '@theme/index';
 import { NativeBaseProvider } from 'native-base';
 
@@ -23,7 +23,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <SignIn /> : <Loading />}
+      {fontsLoaded ? <SignUp /> : <Loading />}
     </NativeBaseProvider>
   );
 }
