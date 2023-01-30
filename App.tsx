@@ -1,5 +1,6 @@
-import { Text, View, StatusBar } from 'react-native';
+import { Text, StatusBar } from 'react-native';
 
+import { Loading } from '@components/Loading';
 import {
   useFonts,
   Roboto_400Regular,
@@ -20,7 +21,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <Text>Hello World!</Text> : <View />}
+      {!fontsLoaded ? <Text>Hello World!</Text> : <Loading />}
     </NativeBaseProvider>
   );
 }
