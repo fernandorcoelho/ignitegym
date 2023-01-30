@@ -18,6 +18,9 @@
       "@assets/*": [
         "./src/assets/*"
       ],
+      "@theme/*": [
+        "./src/theme/*"
+      ],
       "@components/*": [
         "./src/components/*"
       ],
